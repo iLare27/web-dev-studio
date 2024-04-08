@@ -1,113 +1,172 @@
-import Image from "next/image";
+'use client'
+import Image from 'next/image';
+import {useEffect, useState} from 'react';
+// @ts-ignore
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Link from 'next/link';
+import Head from "next/head";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+export default function HomePage() {
+    useEffect(() => {
+        AOS.init({ duration: 1200 });
+    }, []);
+
+    return (
+        <div className="flex flex-col font-sans ">
+
+            {/* Header */}
+            <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-opacity-30 bg-black/60">
+                <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+                    <Link href="#top" className="text-2xl font-mono text-white py-3">Vitaurus</Link>
+                    <nav>
+                        <ul className="flex space-x-10">
+                            <li><Link href="#services" className="text-lg text-white hover:text-blue-400">Услуги</Link></li>
+                            <li><Link href="#about" className="text-lg text-white hover:text-blue-400">О нас</Link></li>
+                            <li><Link href="#contact" className="text-lg text-white hover:text-blue-400">Связаться</Link></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            {/* Hero Section */}
+            <section id="top" className="relative w-full h-screen overflow-hidden flex justify-center items-center text-center">
+                <video className="hero-video absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 z-[-1] blur-[8px]" playsInline autoPlay muted loop disablePictureInPicture>
+                    <source src="/herocontent.mp4" type="video/mp4"/>
+                    Ваш браузер не поддерживает видео тег.
+                </video>
+                <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0"/>
+
+                <div className="z-10 relative">
+                    <h2 className="text-6xl text-white font-bold mb-6">Расширяйте горизонты вашего бизнеса</h2>
+                    <p className="text-xl mb-8 text-blue-100">Создаем веб-решения, увеличивающие прибыль и открывающие новые возможности</p>
+                    <Link href="#contact" className="bg-[#333333] text-white px-6 py-4 rounded hover:bg-[#292929] transition duration-300">Заявка</Link>
+                </div>
+            </section>
+
+
+            <div className="bg-[#1c1917] text-gray-300">
+
+            {/* Services Section */}
+                <section id="services" className="py-32" data-aos="fade-down" data-aos-once="true" data-aos-delay="200">
+                    <div className="container mx-auto text-center">
+                        <h3 className="text-5xl font-bold mb-16">Услуги</h3>
+                        <div className="flex flex-wrap justify-center gap-10">
+                            {/* Service Cards */}
+                            {serviceCards.map((service, index) => (
+                                <div key={index} className="w-full md:w-1/3 bg-[#333333] rounded-lg p-6 card">
+                                    <Image src={service.image} alt={service.title} width={500} height={300} className="rounded-md" />
+                                    <h4 className="text-2xl font-semibold text-white mt-4">{service.title}</h4>
+                                    <p className="text-gray-400 mt-2">{service.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/*About us section*/}
+                <section id="about" className="bg-[#1c1917] text-white py-32" data-aos="fade-down" data-aos-once="true" data-aos-delay="200">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="flex flex-wrap justify-center gap-10">
+                            <div className="w-full lg:w-2/3 text-lg">
+                                <h2 className="text-5xl font-bold mb-6">О нас</h2>
+                                <p className="mb-4">Мы — команда профессионалов, специализирующихся на создании качественных веб-решений. Наша цель — помогать бизнесу расти и развиваться, предоставляя инновационные инструменты для достижения их целей.</p>
+                                <p>С нами ваш проект получит не только функциональный и красивый сайт, но и надежного партнера в лице нашей команды.</p>
+                            </div>
+                            <div className="w-8/12 flex justify-center gap-6">
+                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center card">
+                                    <span className="text-xl">Изображение 1</span>
+                                </div>
+                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center card">
+                                    <span className="text-xl">Изображение 2</span>
+                                </div>
+                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center card">
+                                    <span className="text-xl">Изображение 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                {/* Contact Section */}
+                <section id="contact" className="py-32">
+                    <div className="container mx-auto" >
+                        <h3 className="text-5xl font-bold text-center text-white mb-16" data-aos="fade-up">Оставьте заявку</h3>
+                        <div className="max-w-xl mx-auto">
+                            <form action="#" method="POST" data-aos="fade-up">
+                                <div className="mb-6">
+                                    <input type="text" name="name" placeholder="Ваше имя *" required className="w-full px-4 py-2 rounded-lg focus:outline-none bg-[#333333] text-white"/>
+                                </div>
+                                <div className="mb-6">
+                                    <input type="tel" name="phone" placeholder="Ваш телефон *" required className="w-full px-4 py-2 rounded-lg focus:outline-none bg-[#333333] text-white"/>
+                                </div>
+                                <div className="mb-6">
+                                    <input type="email" name="email" placeholder="Ваш E-mail" className="w-full px-4 py-2 rounded-lg focus:outline-none bg-[#333333] text-white"/>
+                                </div>
+                                <div className="mb-6">
+                                    <textarea name="message" placeholder="Описание проекта" rows={4} className="w-full px-4 py-2 rounded-lg focus:outline-none bg-[#333333] text-white"></textarea>
+                                </div>
+                                <div className="text-center">
+                                    <button type="submit" className="mt-4 bg-[#333333] hover:bg-[#292929] text-white font-bold py-3 px-6 rounded-lg transition duration-300">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    );
 }
+
+// Example service cards data
+const serviceCards = [
+    {
+        image: '/web-development.jpg',
+        title: 'Разработка веб-сайтов',
+        description: 'Создание сайтов и веб-приложений, которые отлично выглядят на любом устройстве и идеально подходят для ваших бизнес-целей.'
+    },
+    {
+        image: '/ui-ux-design.jpg',
+        title: 'UI/UX Дизайн',
+        description: 'Проектирование интуитивно понятного и привлекательного пользовательского интерфейса, обеспечивающего высокий уровень пользовательского опыта.'
+    },
+    {
+        image: '/branding.jpg',
+        title: 'Разработка бренда',
+        description: 'Создание уникального визуального образа вашего бизнеса, который поможет вам выделиться на рынке.'
+    },
+    {
+        image: '/seo-optimization.jpg',
+        title: 'SEO Оптимизация',
+        description: 'Повышение видимости вашего сайта в поисковых системах для привлечения большего трафика.'
+    },
+    {
+        image: '/digital-marketing.jpg',
+        title: 'Цифровой маркетинг',
+        description: 'Продвижение вашего бренда в интернете через различные каналы цифрового маркетинга для увеличения охвата и узнаваемости.'
+    },
+    {
+        image: '/content-management.jpg',
+        title: 'Управление контентом',
+        description: 'Разработка и реализация стратегии контента, которая помогает привлечь и удержать внимание вашей аудитории.'
+    },
+    {
+        image: '/ecommerce-solutions.jpg',
+        title: 'E-commerce решения',
+        description: 'Создание онлайн-магазинов, которые обеспечивают удобную и безопасную покупку товаров и услуг в интернете.'
+    },
+    {
+        image: '/cloud-solutions.jpg',
+        title: 'Облачные решения',
+        description: 'Интеграция и разработка облачных сервисов для повышения эффективности и масштабируемости вашего бизнеса.'
+    },
+    {
+        image: '/mobile-app-development.jpg',
+        title: 'Разработка мобильных приложений',
+        description: 'Создание мобильных приложений, которые предоставляют пользователям максимально комфортный и полезный опыт.'
+    },
+];
