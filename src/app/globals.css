@@ -14,5 +14,4 @@ html, body {
 
 .card:hover {
     transform: scale(1.05); /* Увеличение размера карточки */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Добавление тени */
 }
