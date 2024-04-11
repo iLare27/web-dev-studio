@@ -5,12 +5,14 @@ import {useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
-import Head from "next/head";
+import data from './content.json';
 
-export default function HomePage() { //todo decompose components, add portfolio page
+export default function HomePage() {
     useEffect(() => {
         AOS.init({ duration: 1200 });
     }, []);
+
+    const serviceCards = data.services;
 
     return (
         <div className="flex flex-col font-sans">
@@ -40,7 +42,7 @@ export default function HomePage() { //todo decompose components, add portfolio 
                             {/* Service Cards */}
                             {serviceCards.map((service, index) => (
                                 <div key={index} className="w-full md:w-1/3 card flex justify-center">
-                                    <Image src={service.image} alt={service.title} width={500} height={300} className="rounded-md object-cover" />
+                                    <Image src={service.image} alt="" width={500} height={300} className="rounded-md object-cover" />
                                     <div className="absolute bottom-0 left-0 right-0 p-4">
                                         <div className="backdrop-blur-md bg-black/50 p-4 rounded-b-md rounded-md">
                                             <h4 className="text-2xl font-semibold text-white">{service.title}</h4>
@@ -54,31 +56,28 @@ export default function HomePage() { //todo decompose components, add portfolio 
                 </section>
 
                 {/*About us section*/}
-                <section id="about" className="bg-[#1c1917] text-white py-32" data-aos="fade-right" data-aos-delay="150">
+                <section id="about" className="bg-[#1c1917] text-white py-32">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-wrap justify-center gap-10">
-                            <div className="w-full lg:w-2/3 text-lg">
+                            <div className="w-full lg:w-2/3 text-lg" data-aos="fade-right" data-aos-delay="150">
                                 <h2 className="text-5xl font-bold mb-6">О нас</h2>
                                 <p className="mb-4">Мы — команда профессионалов, специализирующихся на создании качественных веб-решений. Наша цель — помогать бизнесу расти и развиваться, предоставляя инновационные инструменты для достижения их целей.</p>
                                 <p>С нами ваш проект получит не только функциональный и красивый сайт, но и надежного партнера в лице нашей команды.</p>
                             </div>
                             <div className="w-8/12 flex justify-center gap-6">
-                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center card">
+                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" data-aos="fade-right" data-aos-delay="150">
                                     <span className="text-xl">Изображение 1</span>
                                 </div>
-                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center card">
+                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" data-aos="fade-up" data-aos-delay="150">
                                     <span className="text-xl">Изображение 2</span>
                                 </div>
-                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center card">
+                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" data-aos="fade-left" data-aos-delay="150">
                                     <span className="text-xl">Изображение 3</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
-
-
 
                 {/* Contact Section */}
                 <section id="contact" className="py-32">
@@ -110,32 +109,3 @@ export default function HomePage() { //todo decompose components, add portfolio 
         </div>
     );
 }
-
-// Example service cards data
-const serviceCards = [
-    {
-        image: '/seo.png',
-        title: 'SEO Оптимизация',
-        description: 'Повышение видимости вашего сайта в поисковых системах для привлечения большего трафика.'
-    },    {
-        image: '/seo.png',
-        title: 'SEO Оптимизация',
-        description: 'Повышение видимости вашего сайта в поисковых системах для привлечения большего трафика.'
-    },    {
-        image: '/seo.png',
-        title: 'SEO Оптимизация',
-        description: 'Повышение видимости вашего сайта в поисковых системах для привлечения большего трафика.'
-    },    {
-        image: '/seo.png',
-        title: 'SEO Оптимизация',
-        description: 'Повышение видимости вашего сайта в поисковых системах для привлечения большего трафика.'
-    },    {
-        image: '/seo.png',
-        title: 'SEO Оптимизация',
-        description: 'Повышение видимости вашего сайта в поисковых системах для привлечения большего трафика.'
-    },    {
-        image: '/seo.png',
-        title: 'SEO Оптимизация',
-        description: 'Повышение видимости вашего сайта в поисковых системах для привлечения большего трафика.'
-    },
-];

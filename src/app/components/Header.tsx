@@ -8,10 +8,10 @@ function Header() {
                 <Link href="/#top" className="text-2xl font-mono text-white py-3">Vitaurus</Link>
                 <nav>
                     <ul className="flex space-x-10">
-                        <li><Link href="/#services" className="text-lg text-white hover:text-blue-400">Услуги</Link></li>
-                        <li><Link href="/#about" className="text-lg text-white hover:text-blue-400">О нас</Link></li>
-                        <li><Link href="/portfolio" className="text-lg text-white hover:text-blue-400">Портфолио</Link></li>
-                        <li><Link href="/#contact" className="text-lg text-white hover:text-blue-400">Связаться</Link></li>
+                        <li><Link href="/#services" className="text-lg text-white">Услуги</Link></li>
+                        <li><Link href="/#about" className="text-lg text-white">О нас</Link></li>
+                        <li><Link href="/portfolio" className="text-lg text-white">Портфолио</Link></li>
+                        <li><Link href="/#contact" className="text-lg text-white">Связаться</Link></li>
                     </ul>
                 </nav>
             </div>

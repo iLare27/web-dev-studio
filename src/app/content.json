@@ -1,0 +1,71 @@
+{
+  "portfolioPage": {
+    "title": "Наше портфолио",
+    "description": "В нашем портфолио представлены проекты, которые мы с гордостью разработали, используя современные технологии и инновационные подходы. Мы специализируемся на создании высокопроизводительных веб- и мобильных приложений, опираясь на мощный и гибкий стек технологий, включая Node.js, React и React Native. Эти инструменты позволяют нам строить масштабируемые и эффективные решения, способные удовлетворить самые разнообразные потребности наших клиентов.\n\nПроцесс работы: От идеи до запуска\n\nНаш процесс работы начинается с тщательного анализа требований и целей проекта. Мы тесно взаимодействуем с нашими клиентами на каждом этапе: от планирования и проектирования до разработки, тестирования и запуска. Используя методологии гибкой разработки, мы обеспечиваем эффективное управление проектом и гибкость в воплощении изменений на любом этапе разработки."
+  },
+  "services": [
+    {
+      "image": "/webdev.webp",
+      "title": "Разработка веб-сайтов",
+      "description": "Создание адаптивных, высокопроизводительных веб-сайтов, от лендингов до сложных веб-платформ."
+    },
+    {
+      "image": "/uiux.webp",
+      "title": "UI/UX Дизайн",
+      "description": "Разработка интуитивно понятных и визуально привлекательных интерфейсов для улучшения пользовательского опыта."
+    },
+    {
+      "image": "/mobiledev.webp",
+      "title": "Разработка мобильных приложений",
+      "description": "Создание нативных и кроссплатформенных мобильных приложений для iOS и Android."
+    },
+    {
+      "image": "/seo.webp",
+      "title": "SEO Оптимизация",
+      "description": "Повышение видимости вашего сайта в поисковых системах для привлечения большего трафика."
+    },
+    {
+      "image": "/crm.webp",
+      "title": "Разработка CRM систем",
+      "description": "Построение индивидуальных CRM систем для автоматизации ваших бизнес-процессов и повышения эффективности работы с клиентами."
+    }
+  ],
+  "projectsData": [
+    {
+      "name": "example1",
+      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
+      "portfolioImage": "/",
+      "image": "/pr.png"
+    },
+    {
+      "name": "example1",
+      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
+      "portfolioImage": "/",
+      "image": "/pr.png"
+    },
+    {
+      "name": "example1",
+      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
+      "portfolioImage": "/",
+      "image": "/pr.png"
+    },
+    {
+      "name": "example1",
+      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
+      "portfolioImage": "/",
+      "image": "/pr.png"
+    },
+    {
+      "name": "example1",
+      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
+      "portfolioImage": "/",
+      "image": "/pr.png"
+    },
+    {
+      "name": "example1",
+      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
+      "portfolioImage": "/",
+      "image": "/pr.png"
+    }
+  ]
+}
