@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
 import data from './content.json';
+import Contact from "@/app/components/Contact";
 
 export default function HomePage() {
     useEffect(() => {
@@ -56,7 +57,7 @@ export default function HomePage() {
                 </section>
 
                 {/*About us section*/}
-                <section id="about" className="bg-[#1c1917] text-white py-32">
+                <section id="about" className="text-white py-32">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-wrap justify-center gap-10">
                             <div className="w-full lg:w-2/3 text-lg" data-aos="fade-right" data-aos-delay="150">
@@ -65,46 +66,25 @@ export default function HomePage() {
                                 <p>С нами ваш проект получит не только функциональный и красивый сайт, но и надежного партнера в лице нашей команды.</p>
                             </div>
                             <div className="w-8/12 flex justify-center gap-6">
-                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" data-aos="fade-right" data-aos-delay="150">
-                                    <span className="text-xl">Изображение 1</span>
+                                <div className="rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" style={{position:"relative"}} data-aos="fade-right" data-aos-delay="150">
+                                    <Image src="/pr.png" alt="Описание изображения 3" className="rounded-lg card" fill style={{objectFit:"cover"}}/>
                                 </div>
-                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" data-aos="fade-up" data-aos-delay="150">
-                                    <span className="text-xl">Изображение 2</span>
+                                <div className="rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" style={{position:"relative"}} data-aos="fade-up" data-aos-delay="150">
+                                    <Image src="/pr.png" alt="Описание изображения 3" className="rounded-lg card" fill style={{objectFit:"cover"}}/>
                                 </div>
-                                <div className="bg-[#333333] rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" data-aos="fade-left" data-aos-delay="150">
-                                    <span className="text-xl">Изображение 3</span>
+                                <div className="rounded-lg p-6 w-[400px] h-96 flex items-center justify-center" style={{position:"relative"}} data-aos="fade-left" data-aos-delay="150">
+                                    <Image src="/pr.png" alt="Описание изображения 3" className="rounded-lg card" fill style={{objectFit:"cover"}}/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
+
                 {/* Contact Section */}
                 <section id="contact" className="py-32">
-                    <div className="container mx-auto" >
-                        <h3 className="text-5xl font-bold text-center text-white mb-16" data-aos="fade-up">Оставьте заявку</h3>
-                        <div className="max-w-xl mx-auto">
-                            <form action="#" method="POST" data-aos="fade-up">
-                                <div className="mb-6">
-                                    <input type="text" name="name" placeholder="Ваше имя *" required className="w-full px-4 py-2 rounded-lg focus:outline-none bg-[#333333] text-white"/>
-                                </div>
-                                <div className="mb-6">
-                                    <input type="tel" name="phone" placeholder="Ваш телефон *" required className="w-full px-4 py-2 rounded-lg focus:outline-none bg-[#333333] text-white"/>
-                                </div>
-                                <div className="mb-6">
-                                    <input type="email" name="email" placeholder="Ваш E-mail" className="w-full px-4 py-2 rounded-lg focus:outline-none bg-[#333333] text-white"/>
-                                </div>
-                                <div className="mb-6">
-                                    <textarea name="message" placeholder="Описание проекта" rows={4} className="w-full px-4 py-2 rounded-lg focus:outline-none bg-[#333333] text-white"></textarea>
-                                </div>
-                                <div className="text-center">
-                                    <button type="submit" className="mt-4 bg-[#333333] hover:bg-[#292929] text-white font-bold py-3 px-6 rounded-lg transition duration-300">Отправить</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    <Contact/>
                 </section>
-
             </div>
         </div>
     );
