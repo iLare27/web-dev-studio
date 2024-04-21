@@ -32,9 +32,6 @@ export default function HomePage() {
                 </div>
             </section>
 
-
-            <div className="bg-[#1c1917] text-gray-300">
-
             {/* Services Section */}
                 <section id="services" className="py-32" data-aos="fade-right" data-aos-delay="150">
                     <div className="container mx-auto text-center">
@@ -86,6 +83,5 @@ export default function HomePage() {
                     <Contact/>
                 </section>
             </div>
-        </div>
     );
 }
