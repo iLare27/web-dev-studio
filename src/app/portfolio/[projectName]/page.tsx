@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import content from "@/app/content.json";
 import Link from "next/link";
+import {getProject} from "@/app/portfolio/[projectName]/utils";
 
 export async function generateStaticParams() {
     const projects = data.projectsData;
@@ -13,13 +14,9 @@ export async function generateStaticParams() {
     }))
 }
 
-export function getProject(name: string) {
-    return data.projectsData.find(project => project.name === name);
-}
-
 // @ts-ignore
 export default function Page({ params }) {
-    const project = getProject(params.projectName);
+    const project = getProject(data ,params.projectName);
 
     if (!project) {
         return (<main className="bg-[#1c1917] text-gray-300 min-h-screen pt-32">
