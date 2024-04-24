@@ -21,8 +21,8 @@ function About() {
                             src="/about1.jpg"
                             alt="Описание изображения 1"
                             layout="responsive"
-                            width={400} // Ширина изображения на десктопах
-                            height={300} // Высота изображения на десктопах
+                            width={300} // Ширина изображения на десктопах
+                            height={400} // Высота изображения на десктопах
                             className="rounded-lg card"
                         />
                     </div>
@@ -33,8 +33,8 @@ function About() {
                             src="/about2.jpg"
                             alt="Описание изображения 2"
                             layout="responsive"
-                            width={400}
-                            height={300}
+                            width={300}
+                            height={400}
                             className="rounded-lg card"
                         />
                     </div>
@@ -45,8 +45,8 @@ function About() {
                             src="/about3.jpg"
                             alt="Описание изображения 3"
                             layout="responsive"
-                            width={400}
-                            height={300}
+                            width={300}
+                            height={400}
                             className="rounded-lg card"
                         />
                     </div>

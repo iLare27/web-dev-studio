@@ -4,6 +4,7 @@
 
 html, body {
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 
 /* Добавьте этот CSS в ваш глобальный файл стилей или в компоненте */
