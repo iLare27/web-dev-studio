@@ -1,6 +1,6 @@
 {
   "portfolioPage": {
-    "title": "Наше портфолио",
+    "title": "Портфолио",
     "description": "В нашем портфолио представлены проекты, которые мы с гордостью разработали, используя современные технологии и инновационные подходы. Мы специализируемся на создании высокопроизводительных веб- и мобильных приложений, опираясь на мощный и гибкий стек технологий, включая Node.js, React и React Native. Эти инструменты позволяют нам строить масштабируемые и эффективные решения, способные удовлетворить самые разнообразные потребности наших клиентов.\n\nПроцесс работы: От идеи до запуска\n\nНаш процесс работы начинается с тщательного анализа требований и целей проекта. Мы тесно взаимодействуем с нашими клиентами на каждом этапе: от планирования и проектирования до разработки, тестирования и запуска. Используя методологии гибкой разработки, мы обеспечиваем эффективное управление проектом и гибкость в воплощении изменений на любом этапе разработки."
   },
   "services": [
@@ -33,39 +33,38 @@
   "projectsData": [
     {
       "name": "example1",
+      "type": "CRM",
       "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
       "portfolioImage": "/",
-      "image": "/pr.png"
+      "image": ""
     },
     {
       "name": "example1",
+      "type": "CRM",
       "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
       "portfolioImage": "/",
-      "image": "/pr.png"
+      "image": ""
     },
     {
       "name": "example1",
+      "type": "CRM",
       "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
       "portfolioImage": "/",
-      "image": "/pr.png"
+      "image": ""
     },
     {
       "name": "example1",
+      "type": "CRM",
       "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
       "portfolioImage": "/",
-      "image": "/pr.png"
+      "image": ""
     },
     {
       "name": "example1",
+      "type": "CRM",
       "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
       "portfolioImage": "/",
-      "image": "/pr.png"
-    },
-    {
-      "name": "example1",
-      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
-      "portfolioImage": "/",
-      "image": "/pr.png"
+      "image": ""
     }
   ]
 }

@@ -5,16 +5,14 @@ import {useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
-import data from './content.json';
 import Contact from "@/app/components/Contact";
 import About from "@/app/components/About";
+import Services from "@/app/components/Services";
 
 export default function HomePage() {
     useEffect(() => {
         AOS.init({ duration: 1200 });
     }, []);
-
-    const serviceCards = data.services;
 
     return (
         <div className="flex flex-col font-sans">
@@ -39,25 +37,8 @@ export default function HomePage() {
             </section>
 
             {/* Services Section */}
-            <section id="services" className="py-32" data-aos="fade-right" data-aos-delay="150">
-                <div className="container mx-auto text-center">
-                    <h3 className="text-5xl font-bold mb-16">Услуги</h3>
-                    <div className="flex flex-wrap justify-center gap-10">
-                        {/* Service Cards */}
-                        {serviceCards.map((service, index) => (
-                            <div key={index} className="w-full md:w-1/3 card flex justify-center">
-                                <Image src={service.image} alt="" width={500} height={300}
-                                       className="rounded-md object-cover"/>
-                                <div className="absolute bottom-0 left-0 right-0 p-4">
-                                    <div className="backdrop-blur-md bg-black/50 p-4 rounded-b-md rounded-md">
-                                        <h4 className="text-2xl font-semibold text-white">{service.title}</h4>
-                                        <p className="text-gray-400">{service.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+            <section id="services" className="py-32">
+                <Services/>
             </section>
 
             <section id="about" className="text-white py-32">
