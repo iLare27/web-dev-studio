@@ -16,11 +16,11 @@ function PortfolioPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4" data-aos="fade-right">
                         {projects.map((project, index) => (
                             <div key={index} className="bg-neutral-800 p-4 rounded-md">
-                                <Link href={`/portfolio/${project.name}`} passHref className="text-lg font-semibold">
+                                <Link href={`/portfolio/${project.urlName}`} passHref className="text-lg font-semibold">
                                     {project.name}
                                 </Link>
                                 <p className="text-sm text-gray-400 mt-1">{project.type}</p>
-                                {index !== projects.length - 1 && <hr className="my-2 border-gray-600" />}
+                                <hr className="my-2 border-gray-600" />
                             </div>
                         ))}
                     </div>

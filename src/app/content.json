@@ -1,7 +1,7 @@
 {
   "portfolioPage": {
     "title": "Портфолио",
-    "description": "В нашем портфолио представлены проекты, которые мы с гордостью разработали, используя современные технологии и инновационные подходы. Мы специализируемся на создании высокопроизводительных веб- и мобильных приложений, опираясь на мощный и гибкий стек технологий, включая Node.js, React и React Native. Эти инструменты позволяют нам строить масштабируемые и эффективные решения, способные удовлетворить самые разнообразные потребности наших клиентов.\n\nПроцесс работы: От идеи до запуска\n\nНаш процесс работы начинается с тщательного анализа требований и целей проекта. Мы тесно взаимодействуем с нашими клиентами на каждом этапе: от планирования и проектирования до разработки, тестирования и запуска. Используя методологии гибкой разработки, мы обеспечиваем эффективное управление проектом и гибкость в воплощении изменений на любом этапе разработки."
+    "description": "Добро пожаловать на нашу страницу портфолио! В нашей студии мы сосредоточены на создании передовых решений, используя современные технологии, такие как Node.js"
   },
   "services": [
     {
@@ -32,38 +32,39 @@
   ],
   "projectsData": [
     {
-      "name": "example1",
-      "type": "CRM",
-      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
-      "portfolioImage": "/",
+      "name": "Kaspi аналитика, автоматизация продаж",
+      "urlName": "kaspi-bot",
+      "status": false,
+      "type": "Сервис / API / Telegram-бот",
+      "description": "",
+      "stack": "",
       "image": ""
     },
     {
-      "name": "example1",
-      "type": "CRM",
-      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
-      "portfolioImage": "/",
+      "name": "Academy Artistic",
+      "urlName": "academy-artistic",
+      "status": true,
+      "type": "Лендинг",
+      "description": "Для Academy Artistic был разработан стильный одностраничный сайт, предназначенный для продвижения курсов по обучению художественному искусству. Проект отражает творческую сущность академии через привлекательный визуальный дизайн, что способствует привлечению будущих художников и потенциальных клиентов.",
+      "stack": "Базовые HTML/CSS/JavaScript + библиотека AOS (Animate On Scroll) для анимирования элементов",
+      "image": "/landing.png"
+    },
+    {
+      "name": "AniFlow",
+      "urlName": "aniflow",
+      "status": false,
+      "type": "Интернет-магазин",
+      "description": "",
+      "stack": "",
       "image": ""
     },
     {
-      "name": "example1",
-      "type": "CRM",
-      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
-      "portfolioImage": "/",
-      "image": ""
-    },
-    {
-      "name": "example1",
-      "type": "CRM",
-      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
-      "portfolioImage": "/",
-      "image": ""
-    },
-    {
-      "name": "example1",
-      "type": "CRM",
-      "description": "example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text example1 text ",
-      "portfolioImage": "/",
+      "name": "AqylCrypto",
+      "urlName": "aqylcrypto",
+      "status": false,
+      "type": "Telegram-бот",
+      "description": "",
+      "stack": "",
       "image": ""
     }
   ]
