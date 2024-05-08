@@ -14,5 +14,5 @@ html, body {
 }
 
 .card:hover {
-    transform: scale(1.05); /* Увеличение размера карточки */
+    transform: scale(1.025); /* Увеличение размера карточки */
 }

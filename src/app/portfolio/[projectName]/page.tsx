@@ -29,7 +29,7 @@ export default function Page({ params }) {
                                 <h1 className="text-4xl font-bold mb-8 pt-8">Стек:</h1>
                                 <p className="font-medium pb-8">{project.stack}</p>
                             </div>
-                            <div className="w-full lg:w-1/2 flex flex-wrap justify-start lg:justify-end gap-8" data-aos="fade-left" data-aos-delay="150">
+                            <div className="w-full lg:w-1/2 flex flex-wrap justify-start lg:justify-end gap-8 pb-16" data-aos="fade-left" data-aos-delay="150">
                                 <div className="w-full max-w-4xl h-auto">
                                     <Image
                                         src={project.image}
